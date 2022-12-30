@@ -4,7 +4,7 @@ from django.shortcuts import render
 from integrant.models import Integrant
 
 def create_integrants(request):
-    new_integrant=Integrant.objects.create(name ='n', edge = 1 , major = True)
+    new_integrant=Integrant.objects.create(name ='Tomas Agustin', edge =25 , major = True)
     print(new_integrant)
     return HttpResponse('nuevo integrante creado')
 
