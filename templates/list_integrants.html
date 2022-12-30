@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    {% for integrant in integrant %}
+
+      <p>el integrante es {{integrant.name}}</p>
+
+      <p>su edad es{{integrant.edge}}</p>
+
+      {% if integrant.major ==  True  %}
+
+            <p>el integrante es mayor de edad</p>
+      {% else %}
+            <p>el integrante es menor de edad</p>   
+      {% endif %}
+     
+
+    {% endfor %}
+
+
+
+
+
+</body>
+</html>
